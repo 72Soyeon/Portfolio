@@ -1,0 +1,247 @@
+body {
+    position: relative;
+    width: 100%;
+    font-family: "satoshi", sans;
+    color: white;
+    overflow-x: hidden;
+ } 
+ 
+ a:link{
+    text-decoration: none;
+    color: white;
+ }
+ 
+ a:visited{
+    text-decoration: none;
+    color: white;
+ }
+ 
+ a:hover{
+    color: #ff7f50;
+    /* text-decoration: underline;
+    text-decoration-thickness: 1.5px; */
+    transition: 0.2s;
+ }
+ 
+ .header {
+   position: relative;
+   display: flex;
+   top: 2rem;
+   width: 100%;
+   justify-content: flex-end;
+   padding-left: 3.6rem;
+   padding-right: 5rem;
+   font-size: 1.2rem;
+   font-weight: 700;
+   box-sizing: border-box;
+   z-index: 20;
+ }
+ .header div {
+    margin-left: 3rem;
+ }
+ 
+
+
+
+
+/* About */
+
+section.about_About {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 12rem;
+    /* padding-left: 5rem; */
+    box-sizing: border-box;
+ }
+ 
+ section.about_About .aboutBox {
+    margin-left: 8rem;
+ }
+ 
+ section.about_About .aboutBox .title {
+    margin-top: 2.6rem;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 100%;
+ }
+ 
+ section.about_About .aboutBox .description {
+    width: 36rem;
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 120%;
+ }
+ 
+ 
+ section.about_About .aboutBox .subDescription {
+    width: 40rem;
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 120%;
+    color: #7a7a7a;
+ }
+ 
+ 
+ section.about_About .aboutBox .link {
+    color: #7a7a7a;
+    margin-top: 2.5rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 120%;
+ 
+    letter-spacing: -0.02em;
+ }
+ 
+ 
+ 
+ /* Skills */
+ section.skills {
+    position: relative;
+    padding-left: 20.5rem;
+    box-sizing: border-box;
+    margin-top: 12rem
+ }
+ 
+ section.skills h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    letter-spacing: -0.06em;
+ }
+ section.skills .skillsBox {
+    margin-top: 3.25rem;
+    border-top: 2px solid #7c7c7c;
+    border-bottom: 2px solid #7c7c7c;
+ }
+ 
+ section.skills .skillsBox .skillSets {
+    width: 90rem;
+    margin-top: 3rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 140%;
+    letter-spacing: -0.06em;
+    color: #7a7a7a;
+ }
+ 
+ section.skills .skillsBox span{
+    font-size: 2.2em;
+    line-height: 140%;
+    color: #ffffff;
+ }
+ 
+ 
+ 
+ /* Work Experience */
+ section.workExp {
+    position: relative;
+    padding-left: 20.5rem;
+    box-sizing: border-box;
+    margin-top: 20rem
+ }
+ 
+ section.workExp h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    letter-spacing: -0.06em;
+ }
+ 
+ section.workExp .workExpBox {
+    margin-top: 3.25rem;
+    border-top: 2px solid #7c7c7c;
+    border-bottom: 2px solid #7c7c7c;
+ 
+ }
+ 
+ section.workExp .divide{
+    width: 100%;
+    height: 2px;
+    background-color: #7c7c7c;
+    margin-top: 2rem;
+ }
+ 
+ section.workExp .workExpBox .workDesc {
+    width: 90rem;
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 140%;
+    letter-spacing: -0.06em;
+    color: #7a7a7a;
+ }
+ 
+ section.workExp .workExpBox span{
+    font-size: 2.4em;
+    line-height: 140%;
+    color: #ffffff;
+ }
+ 
+ 
+ /* contact */
+ section.contactAbout {
+    position: relative;
+    width: 100%;
+    margin-top: 24rem;
+    margin-bottom: 17.5rem;
+    padding-left: 20.5rem;
+    box-sizing: border-box;
+ }
+ section.contactAbout .container {
+    display: flex;
+ }
+ section.contactAbout .container div:first-child {
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: -0.06em;
+ }
+ section.contactAbout .container div:nth-child(2) {
+    margin-left: 7.5rem;
+    font-weight: 700;
+    font-size: 6rem;
+ }
+ 
+ section.contactAbout .container:nth-child(2) {
+    margin-top: 17.5rem;
+ }
+ section.contactAbout .container:nth-child(2) div:first-child {
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: -0.06em;
+ }
+ section.contactAbout .container:nth-child(2) div:nth-child(2) {
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: -0.06em;
+ }
+ section.contactAbout .container:nth-child(2) div:nth-child(2) li {
+    margin-bottom: 2.5rem;
+ }
+ 
+
+ /* Footer */
+.fixedFooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    background-color: #080808;
+ }
+ 
+ .fixedFooter .external {
+    display: flex;
+    align-items: center;
+ }
+ .fixedFooter .external div:first-child {
+    margin-right: 2.5rem;
+ }
+ 

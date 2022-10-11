@@ -1,0 +1,342 @@
+body {
+   position: relative;
+   width: 100%;
+   font-family: "satoshi", sans;
+   color: white;
+   overflow-x: hidden;
+}
+
+
+
+a:link{
+   text-decoration: none;
+   color: white;
+}
+
+a:visited{
+   text-decoration: none;
+   color: white;
+}
+
+a:hover{
+   color: #ff7f50;
+   /* text-decoration: underline;
+   text-decoration-thickness: 1.5px; */
+   transition: 0.2s;
+}
+
+.header {
+   position: relative;
+   display: flex;
+   top: 2rem;
+   width: 100%;
+   justify-content: flex-end;
+   padding-left: 3.6rem;
+   padding-right: 5rem;
+   font-size: 1.2rem;
+   font-weight: 700;
+   box-sizing: border-box;
+   z-index: 20;
+}
+
+
+.header div {
+   margin-left: 3rem;
+}
+
+
+/* Title */
+section.title {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   padding-left: 5rem;
+   box-sizing: border-box;
+}
+section.title .titleBox {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+}
+section.title .titleBox h1 {
+   font-size: 8rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+}
+
+section.title .titleBox .position {
+   margin-top: 2rem;
+   font-family: "times", sans;
+   font-weight: 400;
+   font-size: 4.5rem;
+   line-height: 5.25rem;
+}
+section.title .titleBox .position span {
+   font-family: "satoshi", sans;
+   font-size: 3rem;
+   line-height: 4rem;
+   letter-spacing: -0.06em;
+   color: #7a7a7a;
+}
+
+/* main works */
+section.mainWorks {
+   position: relative;
+   padding-left: 5rem;
+   box-sizing: border-box;
+}
+section.mainWorks h2 {
+   font-weight: 500;
+   font-size: 3rem;
+   letter-spacing: -0.06em;
+}
+section.mainWorks .worksBox {
+   margin-top: 3.25rem;
+   border-top: 2px solid #7c7c7c;
+   border-bottom: 2px solid #7c7c7c;
+}
+
+section.mainWorks .worksBox .workRow {
+   display: flex;
+   height: 46rem;
+   padding-right: 5rem;
+   align-items: center;
+   cursor: move;
+   overflow-x: scroll;
+
+   /* hide scrollbar */
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+}
+section.mainWorks .worksBox .workRow::-webkit-scrollbar {
+   display: none;
+}
+
+section.mainWorks .divide {
+   width: 100%;
+   height: 2px;
+   background-color: #7c7c7c;
+}
+section.mainWorks .worksBox .workRow .descContainer {
+   width: 30rem;
+   height: 30.9375rem;
+   flex-shrink: 0;
+}
+section.mainWorks .worksBox .workRow .descContainer .meta {
+   font-weight: 400;
+   font-size: 1.4rem;
+   line-height: 1.375rem;
+   letter-spacing: -0.06em;
+}
+section.mainWorks .worksBox .workRow .descContainer .title {
+   margin-top: 1.6rem;
+   font-family: "times";
+   font-size: 6rem;
+   letter-spacing: -0.06em;
+}
+section.mainWorks .worksBox .workRow .descContainer .desc {
+   margin-top: 4.6rem;
+   font-weight: 100;
+   font-size: 1.25rem;
+   line-height: 160%;
+   letter-spacing: 0.02rem;
+   color: #e3e3e3;
+}
+section.mainWorks .worksBox .workRow .descContainer .desc .bold {
+   font-weight: 700;
+   color: white;
+}
+
+section.mainWorks .worksBox .workRow .imageList {
+   display: flex;
+   flex: 1;
+   height: 30.9375rem;
+   margin-left: 12.5rem;
+}
+section.mainWorks .worksBox .workRow .imageList img {
+   margin-left: 0.625rem;
+   user-select: none;
+}
+
+/* more works */
+section.moreWorks {
+   position: relative;
+   margin-top: 24rem;
+   width: 100%;
+   padding-left: 5rem;
+   box-sizing: border-box;
+}
+section.moreWorks h2 {
+   font-weight: 500;
+   font-size: 3rem;
+   letter-spacing: -0.06em;
+}
+section.moreWorks .boxContainer {
+   margin-top: 3.75rem;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   justify-items: between;
+   grid-row-gap: 12rem;
+   grid-column-gap: 0rem;
+}
+section.moreWorks .boxContainer .box {
+   position: relative;
+   max-width: 85%;
+}
+section.moreWorks .boxContainer .box .title {
+   margin-top: 2.5rem;
+   font-weight: 700;
+   font-size: 2rem;
+   line-height: 120%;
+   letter-spacing: -0.02em;
+   color: white;
+}
+section.moreWorks .boxContainer .box .description {
+   margin-top: 1.5rem;
+   font-weight: 400;
+   font-size: 1.25rem;
+   line-height: 140%;
+   letter-spacing: -0.06em;
+
+   color: #7c7c7c;
+}
+
+section.moreWorks .boxContainer .box img{
+   max-width: 100%;
+   height: auto;
+   object-fit: contain
+}
+
+
+
+/* about */
+section.about {
+   display: flex;
+   width: 100%;
+   margin-top: 24rem;
+   padding-left: 5rem;
+   box-sizing: border-box;
+}
+
+section.about .aboutBox {
+   margin-left: 10rem;
+}
+section.about .aboutBox .title {
+   font-weight: 500;
+   font-size: 6rem;
+   line-height: 100%;
+   letter-spacing: -0.06em;
+}
+section.about .aboutBox .description {
+   width: 55rem;
+   margin-top: 2rem;
+   font-weight: 400;
+   font-size: 2.2rem;
+   line-height: 120%;
+}
+section.about .aboutBox .link {
+   color: #7a7a7a;
+   margin-top: 2.5rem;
+   font-weight: 400;
+   font-size: 1.25rem;
+   line-height: 120%;
+
+   letter-spacing: -0.02em;
+}
+section.about .aboutBox .careers {
+   margin-top: 6.25rem;
+   font-weight: 400;
+   font-size: 1.4rem;
+   line-height: 140%;
+   letter-spacing: -0.06em;
+   color: #7a7a7a;
+}
+section.about .aboutBox .careers span {
+   font-size: 1.6em;
+   line-height: 140%;
+   color: #ffffff;
+}
+
+/* contact */
+section.contact {
+   position: relative;
+   width: 100%;
+   margin-top: 24rem;
+   margin-bottom: 17.5rem;
+   padding-left: 5rem;
+   box-sizing: border-box;
+}
+section.contact .container {
+   display: flex;
+}
+section.contact .container div:first-child {
+   font-weight: 500;
+   font-size: 2rem;
+   letter-spacing: -0.06em;
+}
+section.contact .container div:nth-child(2) {
+   margin-left: 7.5rem;
+   font-weight: 700;
+   font-size: 6rem;
+}
+
+section.contact .container:nth-child(2) {
+   margin-top: 17.5rem;
+}
+section.contact .container:nth-child(2) div:first-child {
+   font-weight: 400;
+   font-size: 2rem;
+   letter-spacing: -0.06em;
+}
+section.contact .container:nth-child(2) div:nth-child(2) {
+   font-weight: 700;
+   font-size: 2.5rem;
+   letter-spacing: -0.06em;
+}
+section.contact .container:nth-child(2) div:nth-child(2) li {
+   margin-bottom: 2.5rem;
+}
+
+/* Footer */
+.fixedFooter {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100vw;
+   height: 4rem;
+   display: flex;
+   justify-content: space-between;
+   padding: 0 5rem;
+   align-items: center;
+   font-size: 1rem;
+   font-weight: 500;
+   box-sizing: border-box;
+   background-color: #080808;
+}
+
+.fixedFooter .external {
+   display: flex;
+   align-items: center;
+}
+.fixedFooter .external div:first-child {
+   margin-right: 2.5rem;
+}
+
+
+@media only screen and (max-width: 720px) {
+   .header {
+      width: 100%;
+      justify-content: flex-end;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      box-sizing: border-box;
+      z-index: 20;
+   }
+ }
+
+
+
+
