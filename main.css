@@ -221,6 +221,13 @@ section.about {
    align-items: flex-start;
 }
 
+
+section.about img{
+   width: 30%;
+   height: auto;
+   object-fit: contain;
+}
+
 section.about .aboutBox {
    margin-left: 6rem;
    margin-right: 6rem; 
@@ -328,18 +335,412 @@ section.contact .container:nth-child(2) div:nth-child(2) li {
 }
 
 
-@media only screen and (max-width: 720px) {
+
+
+/* Tablet */
+@media only screen and (max-width: 1080px) {
+
+   /* header */
    .header {
-      width: 100%;
-      justify-content: flex-end;
       padding-left: 2rem;
       padding-right: 2rem;
-      font-size: 1.6rem;
-      font-weight: 700;
-      box-sizing: border-box;
-      z-index: 20;
+      font-size: 1rem;
    }
- }
+
+   .header div{
+      margin-left: 1.5rem;
+   }
+
+
+   /* Main title */
+
+   section.title {
+      padding-left: 2rem;
+      padding-right: 2rem;
+   }
+
+   section.title .titleBox h1 {
+      font-size: 6rem;
+      margin-bottom: 1rem;
+   }
+
+   section.title .titleBox .position {
+      margin-top: 1.5rem;
+      font-size: 3rem;
+      line-height: 3rem;
+   }
+   section.title .titleBox .position span {
+      font-size: 3rem;
+      line-height: 4rem;
+      letter-spacing: -0.06em;
+   }
+
+
+
+   /* Main Works */
+   section.mainWorks {
+      padding-left: 2rem;
+   }
+   section.mainWorks h2 {
+      font-size: 2.5rem;
+   }
+   section.mainWorks .worksBox {
+      margin-top: 2rem;
+      border-top: 2px solid #7c7c7c;
+      border-bottom: 2px solid #7c7c7c;
+   }
+   
+   section.mainWorks .worksBox .workRow {
+      display: flex;
+      height: 36rem;
+      align-items: center;
+   }
+   
+   section.mainWorks .worksBox .workRow .descContainer {
+      width: 26rem;
+      height: 30rem;
+   }
+   section.mainWorks .worksBox .workRow .descContainer .meta {
+      font-size: 1.25rem;
+      line-height: 1.1rem;
+   }
+   section.mainWorks .worksBox .workRow .descContainer .title {
+      margin-top: 1.4rem;
+      font-size: 5.2rem;
+   }
+   section.mainWorks .worksBox .workRow .descContainer .desc {
+      margin-top: 3.2rem;
+      font-size: 1.25rem;
+   }
+
+   section.mainWorks .worksBox .workRow .imageList {
+      height: 28rem;
+      margin-left: 9rem;
+   }
+
+
+
+   /* more works */
+   section.moreWorks {
+      margin-top: 18rem;
+      padding-left: 2rem;
+   }
+   section.moreWorks h2 {
+      font-size: 2.5rem;
+   }
+
+   section.moreWorks .boxContainer {
+      margin-top: 3.75rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+   }
+
+   section.moreWorks .boxContainer .box .title {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      line-height: 120%;
+   }
+
+   section.moreWorks .boxContainer .box .description {
+      margin-top: 1.25rem;
+   }
+
+
+   /* about */
+   section.about {
+      margin-top: 18rem;
+      padding-left: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   section.about img{
+      width: 0%;
+   }
+
+   section.about .aboutBox {
+      margin-top: 2rem;
+      margin-left: 0rem;
+      margin-right: 2rem; 
+   }
+
+   section.about .aboutBox .title {
+      font-size: 4rem;
+   }
+
+   section.about .aboutBox .description {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+   }
+   section.about .aboutBox .link {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+   }
+   section.about .aboutBox .careers {
+      margin-top: 6rem;
+      font-size: 1.25rem;
+   }
+   section.about .aboutBox .careers span {
+      font-size: 1.4rem;
+   }
+
+
+   
+   /* contact */
+   section.contact {
+      margin-top: 18rem;
+      margin-bottom: 14rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+   }
+
+   section.contact .container div:first-child {
+      font-size: 1.6rem;
+   }
+   section.contact .container div:nth-child(2) {
+      margin-left: 5rem;
+      font-size: 4rem;
+   }
+
+   section.contact .container:nth-child(2) {
+      margin-top: 14rem;
+   }
+
+   section.contact .container:nth-child(2) div:first-child {
+      font-size: 1.6rem;
+   }
+
+   section.contact .container:nth-child(2) div:nth-child(2) {
+      font-size: 2rem;
+   }
+   section.contact .container:nth-child(2) div:nth-child(2) li {
+      margin-bottom: 2rem;
+   }
+
+
+   /* Footer */
+   .fixedFooter {
+      padding: 2rem;
+      font-size: 1rem;
+   }
+
+   .fixedFooter .external div:first-child {
+      margin-right: 2rem;
+   }
+
+
+}
+
+
+
+
+
+/* Phone */
+@media only screen and (max-width: 480px) {
+
+   *{
+      margin: 0px;
+      padding: 0px;
+   }
+   /* header */
+   .header {
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+      font-size: 0.8rem;
+   }
+
+   .header div{
+      margin-left: 1.5rem;
+   }
+
+
+   /* Main title */
+
+   section.title {
+      padding-left: 2rem;
+      padding-right: 2rem;
+   }
+
+   section.title .titleBox h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+   }
+
+   section.title .titleBox .position {
+      margin-top: 1.5rem;
+      font-size: 1.6rem;
+      line-height: 3rem;
+   }
+   section.title .titleBox .position span {
+      font-size: 1.25rem;
+      line-height: 4rem;
+      letter-spacing: -0.06em;
+   }
+
+
+
+   /* Main Works */
+   section.mainWorks {
+      padding-left: 1rem;
+      margin-top: 4rem;
+   }
+   section.mainWorks h2 {
+      font-size: 1.6rem;
+   }
+   section.mainWorks .worksBox {
+      margin-top: 2rem;
+   }
+   
+   section.mainWorks .worksBox .workRow {
+      display: flex;
+      height: 28rem;
+      align-items: center;
+   }
+   
+   section.mainWorks .worksBox .workRow .descContainer {
+      width: 20rem;
+      height: 24rem;
+   }
+   section.mainWorks .worksBox .workRow .descContainer .meta {
+      font-size: 1.15rem;
+      line-height: 1.1rem;
+   }
+   section.mainWorks .worksBox .workRow .descContainer .title {
+      margin-top: 1.4rem;
+      font-size: 4rem;
+   }
+   section.mainWorks .worksBox .workRow .descContainer .desc {
+      margin-top: 3.2rem;
+      font-size: 1.15rem;
+   }
+
+   section.mainWorks .worksBox .workRow .imageList {
+      height: 24rem;
+      margin-left: 9rem;
+   }
+
+
+
+   /* more works */
+   section.moreWorks {
+      margin-top: 10rem;
+      padding-left: 1rem;
+   }
+   section.moreWorks h2 {
+      font-size: 1.6rem;
+   }
+
+   section.moreWorks .boxContainer {
+      margin-top: 2rem;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      margin-right: 1rem;
+      grid-row-gap: 6rem;
+   }
+
+   section.moreWorks .boxContainer .box{
+      max-width: 100%;
+   }
+
+   section.moreWorks .boxContainer .box .title {
+      margin-top: 1rem;
+      font-size: 1.4rem;
+      line-height: 120%;
+   }
+
+   section.moreWorks .boxContainer .box .description {
+      margin-top: 1.25rem;
+   }
+
+   section.moreworks .boxContainer img{
+      width: 120%;
+   }
+
+
+   /* about */
+   section.about {
+      margin-top: 10rem;
+      padding-left: 1rem;
+      flex-wrap: wrap;
+   }
+
+   section.about img{
+      width: 0%;
+   }
+
+   section.about .aboutBox {
+      margin-top: 1rem;
+      margin-left: 0rem;
+      margin-right: 1rem; 
+   }
+
+   section.about .aboutBox .title {
+      font-size: 3rem;
+   }
+
+   section.about .aboutBox .description {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+   }
+   section.about .aboutBox .link {
+      margin-top: 2rem;
+      font-size: 1.15rem;
+   }
+   section.about .aboutBox .careers {
+      margin-top: 6rem;
+      font-size: 1.15rem;
+   }
+   section.about .aboutBox .careers span {
+      font-size: 1.15rem;
+   }
+
+
+   
+   /* contact */
+   section.contact {
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+   }
+
+   section.contact .container div:first-child {
+      font-size: 1.25rem;
+   }
+   section.contact .container div:nth-child(2) {
+      margin-left: 2rem;
+      font-size: 1.6rem;
+   }
+
+   section.contact .container:nth-child(2) {
+      margin-top: 10rem;
+   }
+
+   section.contact .container:nth-child(2) div:first-child {
+      font-size: 1.25rem;
+   }
+
+   section.contact .container:nth-child(2) div:nth-child(2) {
+      font-size: 1.6rem;
+   }
+   section.contact .container:nth-child(2) div:nth-child(2) li {
+      margin-bottom: 2rem;
+   }
+
+
+   /* Footer */
+   .fixedFooter {
+      position: fixed;
+      padding: 2rem;
+      font-size: 1rem;
+   }
+
+   .fixedFooter .external div:first-child {
+      margin-right: 2rem;
+   }
+
+
+}
 
 
 
