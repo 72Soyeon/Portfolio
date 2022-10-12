@@ -33,7 +33,7 @@ a:hover{
    justify-content: flex-end;
    padding-left: 3.6rem;
    padding-right: 5rem;
-   font-size: 1.2rem;
+   font-size: 1rem;
    font-weight: 700;
    box-sizing: border-box;
    z-index: 20;
@@ -555,8 +555,8 @@ section.contact .container:nth-child(2) div:nth-child(2) li {
    /* Main title */
 
    section.title {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
    }
 
    section.title .titleBox h1 {
