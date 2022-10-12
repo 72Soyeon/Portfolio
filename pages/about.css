@@ -59,6 +59,12 @@ section.about_About {
  section.about_About .aboutBox {
     margin-left: 8rem;
  }
+
+ section.about_About img{
+   width: 30%;
+   height: auto;
+   object-fit: contain;
+ }
  
  section.about_About .aboutBox .title {
     margin-top: 2.6rem;
@@ -77,7 +83,7 @@ section.about_About {
  
  
  section.about_About .aboutBox .subDescription {
-    width: 40rem;
+    width: 36rem;
     margin-top: 2rem;
     font-weight: 400;
     font-size: 1.8rem;
@@ -101,7 +107,7 @@ section.about_About {
  /* Skills */
  section.skills {
     position: relative;
-    padding-left: 20.5rem;
+    padding-left: 5rem;
     box-sizing: border-box;
     margin-top: 12rem
  }
@@ -118,7 +124,7 @@ section.about_About {
  }
  
  section.skills .skillsBox .skillSets {
-    width: 90rem;
+    width: 95%;
     margin-top: 3rem;
     font-weight: 400;
     font-size: 1.8rem;
@@ -138,7 +144,7 @@ section.about_About {
  /* Work Experience */
  section.workExp {
     position: relative;
-    padding-left: 20.5rem;
+    padding-left: 5rem;
     box-sizing: border-box;
     margin-top: 20rem
  }
@@ -164,7 +170,7 @@ section.about_About {
  }
  
  section.workExp .workExpBox .workDesc {
-    width: 90rem;
+    width: 100%;
     margin-top: 2rem;
     font-weight: 400;
     font-size: 1.8rem;
@@ -186,7 +192,7 @@ section.about_About {
     width: 100%;
     margin-top: 24rem;
     margin-bottom: 17.5rem;
-    padding-left: 20.5rem;
+    padding-left: 5rem;
     box-sizing: border-box;
  }
  section.contactAbout .container {
@@ -245,4 +251,292 @@ section.about_About {
  .fixedFooter .external div:first-child {
     margin-right: 2.5rem;
  }
+
+
+ /* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+   /* header */
+   .header {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      font-size: 1rem;
+   }
+
+   .header div{
+      margin-left: 1.5rem;
+   }
+
+
+   /* About */
+   section.about_About .aboutBox {
+      margin-left: 4rem;
+   }
+
+   section.about_About .aboutBox .title {
+      margin-top: 2rem;
+      font-size: 6rem;
+   }
+
+   section.about_About .aboutBox .description {
+      width: 30rem;
+      margin-top: 2rem;
+      font-size: 2rem;
+   }
+
+
+   section.about_About .aboutBox .subDescription {
+      width: 30rem;
+      margin-top: 2rem;
+      font-size: 1.6rem;
+   }
+
+
+   section.about_About .aboutBox .link {
+      margin-top: 2.2rem;
+   }
+
+   
+   /* Skills */
+   section.skills {
+      padding-left: 2rem;
+      margin-top: 16rem
+   }
+
+   section.skills h2 {
+      font-size: 3rem;
+   }
+
+   section.skills .skillsBox {
+      margin-top: 2.6rem;
+   }
+
+   section.skills .skillsBox .skillSets {
+      margin-top: 3rem;
+      font-size: 1.6rem;
+   }
+
+   section.skills .skillsBox span{
+      font-size: 2rem;
+   }
+
+
+   /* Work Experience */
+   section.workExp {
+      padding-left: 2rem;
+      margin-top: 16rem
+   }
+
+   section.workExp h2 {
+      font-weight: 500;
+      font-size: 3rem;
+      letter-spacing: -0.06em;
+   }
+
+   section.workExp .workExpBox {
+      margin-top: 2.6rem;
+   }
+
+
+   section.workExp .workExpBox .workDesc {
+      font-size: 1.6rem;
+   }
+   section.workExp .workExpBox span{
+      font-size: 2rem;
+   }
+
+
+   
  
+   /* contact */
+   section.contactAbout {
+      margin-top: 16rem;
+      margin-bottom: 10rem;
+      padding-left: 2rem;
+   }
+
+   section.contactAbout .container div:first-child {
+      font-size: 1.4rem;
+   }
+
+   section.contactAbout .container div:nth-child(2) {
+      margin-left: 2rem;
+      font-size: 3rem;
+   }
+
+   section.contactAbout .container:nth-child(2) {
+      margin-top: 12rem;
+   }
+
+   section.contactAbout .container:nth-child(2) div:first-child {
+      font-size: 1.6rem;
+   }
+   section.contactAbout .container:nth-child(2) div:nth-child(2) {
+      font-size: 1.6rem;
+   }
+   section.contactAbout .container:nth-child(2) div:nth-child(2) li {
+      margin-bottom: 2.5rem;
+   }
+
+   /* Footer */
+   .fixedFooter {
+      padding: 2rem;
+      font-size: 1rem;
+   }
+
+   .fixedFooter .external div:first-child {
+      margin-right: 2rem;
+   }
+}
+ 
+
+/* Phone */
+@media only screen and (max-width: 480px) {
+   *{
+      margin: 0px;
+      padding: 0px;
+   }
+
+   /* header */
+   .header {
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+      font-size: 0.8rem;
+   }
+
+   .header div{
+      margin-left: 1.5rem;
+   }
+
+
+
+   /* About */
+   section.about_About .aboutBox {
+      margin-left: 0.8rem;
+      width: 100%;
+   }
+
+   section.about_About img{
+      width: 0%;
+   }
+
+   section.about_About .aboutBox .title {
+      margin-top: 1rem;
+      font-size: 3rem;
+   }
+
+   section.about_About .aboutBox .description {
+      width: 95%;
+      margin-top: 2rem;
+      font-size: 1.6rem;
+   }
+
+
+   section.about_About .aboutBox .subDescription {
+      width: 95%;
+      margin-top: 2rem;
+      font-size: 1.25rem;
+   }
+
+
+   section.about_About .aboutBox .link {
+      margin-top: 1.6rem;
+   }
+
+   
+   /* Skills */
+   section.skills {
+      padding-left: 1rem;
+      margin-top: 8rem
+   }
+
+   section.skills h2 {
+      font-size: 2rem;
+   }
+
+   section.skills .skillsBox {
+      margin-top: 1.6rem;
+   }
+
+   section.skills .skillsBox .skillSets {
+      margin-top: 1.6rem;
+      font-size: 1.25rem;
+   }
+
+   section.skills .skillsBox span{
+      font-size: 1.6rem;
+   }
+
+
+   /* Work Experience */
+   section.workExp {
+      padding-left: 0.8rem;
+      margin-top: 8rem
+   }
+
+   section.workExp h2 {
+      font-size: 2rem;
+   }
+
+   section.workExp .workExpBox {
+      margin-top: 1.6rem;
+   }
+
+
+   section.workExp .workExpBox .workDesc {
+      font-size: 1.25rem;
+   }
+
+   section.workExp .workExpBox span{
+      font-size: 1.6rem;
+   }
+
+
+   
+ 
+   /* contact */
+   section.contactAbout {
+      margin-top: 8rem;
+      margin-bottom: 10rem;
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+   }
+
+   section.contactAbout .container div:first-child {
+      font-size: 1.15rem;
+   }
+
+   section.contactAbout .container div:nth-child(2) {
+      margin-left: 1rem;
+      font-size: 2rem;
+   }
+
+   section.contactAbout .container:nth-child(2) {
+      margin-top: 8rem;
+   }
+
+   section.contactAbout .container:nth-child(2) div:first-child {
+      font-size: 1.25rem;
+   }
+   section.contactAbout .container:nth-child(2) div:nth-child(2) {
+      font-size: 1.25rem;
+   }
+   section.contactAbout .container:nth-child(2) div:nth-child(2) li {
+      margin-bottom: 2.5rem;
+   }
+
+
+   
+
+   
+   /* Footer */
+   .fixedFooter {
+      position: fixed;
+      padding: 0.8rem;
+      font-size: 1rem;
+   }
+
+   .fixedFooter .external div:first-child {
+      margin-right: 2rem;
+   }
+}

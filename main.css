@@ -338,7 +338,7 @@ section.contact .container:nth-child(2) div:nth-child(2) li {
 
 
 /* Tablet */
-@media only screen and (max-width: 1080px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
 
    /* header */
    .header {
@@ -527,8 +527,6 @@ section.contact .container:nth-child(2) div:nth-child(2) li {
    .fixedFooter .external div:first-child {
       margin-right: 2rem;
    }
-
-
 }
 
 
@@ -731,7 +729,7 @@ section.contact .container:nth-child(2) div:nth-child(2) li {
    /* Footer */
    .fixedFooter {
       position: fixed;
-      padding: 2rem;
+      padding: 0.8rem;
       font-size: 1rem;
    }
 
