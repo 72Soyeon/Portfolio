@@ -18,8 +18,6 @@ body {
  
  a:hover{
     color: #ff7f50;
-    /* text-decoration: underline;
-    text-decoration-thickness: 1.5px; */
     transition: 0.2s;
  }
  
@@ -270,7 +268,8 @@ section.about_About {
 
    /* About */
    section.about_About .aboutBox {
-      margin-left: 4rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
    }
 
    section.about_About .aboutBox .title {
@@ -441,6 +440,7 @@ section.about_About {
 
    section.about_About .aboutBox .link {
       margin-top: 1.6rem;
+      font-size: 1.25rem;
    }
 
    

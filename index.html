@@ -4,6 +4,8 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>So Yeon Kim</title>
+      <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+
 
       <!-- Stylesheet -->
       <link
@@ -20,6 +22,7 @@
 
    
    <body>
+
       <!-- Header -->
       <header class="header stagger">
          <div><a href="index.html">HOME</a></div>
@@ -42,10 +45,12 @@
 
       <!-- Mainworks -->
       <section class="mainWorks">
-         <h2>Main Works</h2>
+         <div class="stagger_body_trigger">
+            <h2 class="stagger_body">Main Works</h2>
+         </div> 
          <div class="worksBox">
-            <div class="workRow stagger_body_trigger">
-               <div class="descContainer stagger_body">
+            <div class="workRow">
+               <div class="descContainer ">
                   <div class="meta">2022 &middot; @Dong-a Ilbo</div>
                   <div class="title">The Original</div>
                   <div class="desc">
@@ -65,8 +70,8 @@
                </div>
             </div>
             <div class="divide"></div>
-            <div class="workRow stagger_body_trigger">
-               <div class="descContainer stagger_body">
+            <div class="workRow">
+               <div class="descContainer">
                   <div class="meta">2022 &middot; @Donga-ilbo</div>
                   <div class="title">
                      Interactive<br />
@@ -91,10 +96,12 @@
       </section>
 
       <!-- more works -->
-      <section class="moreWorks more_stagger_body_trigger">
-         <h2>More Works</h2>
-         <div class="boxContainer more_stagger_body">
-            <div class="box stagger_body">
+      <section class="moreWorks">
+         <div class="stagger_body_trigger">
+            <h2 class="stagger_body">More Works</h2>
+         </div>
+         <div class="boxContainer">
+            <div class="box">
                <img src="./assets/images/moreWorks1.png" />
                <div class="title">
                   ‘A Spoon of Inspiration’<br />
@@ -160,9 +167,11 @@
       <!-- About -->
       <section class="about">
          <img src="./assets/images/profile.png">
-         <div class="aboutBox stagger_body_trigger">
-            <div class="title">About</div>
-            <div class="description stagger_body">
+         <div class="aboutBox">
+            <div class="stagger_body_trigger">
+               <div class="title stagger_body">About</div>
+            </div>
+            <div class="description">
                Hi I am So Yeon Kim, a creative designer based in Seoul.<br />
                I believe design can be an effective tool to convey<br/>
                the real message beyond the surface.<br/>
@@ -170,7 +179,7 @@
                I value simple, direct, and yet creative UXUI to pursue a better user experience.
             </div>
             <div class="link"><a href = "./assets/SoYeonKim_resume.pdf" target="_blank">view my resume →</a></div>
-            <div class="careers stagger_body">
+            <div class="careers">
                <span>Creative Designer</span> with front-end knowledge,<br />
                <span>UX Researcher,</span> whose final goal is to make things
                effcient,<br />
@@ -233,20 +242,8 @@
                workRow.scrollLeft = scrollLeft - walk;
             });
          });
-
-
-
-      //    window.addEventListener('scroll', function(e){
-      //       const target = document.querySelector('.name');
-      //       //target.style.transform = 'translate3d(0px, -50px, 0px)';
-      //       // console.log(target.style);
-
-      //       var scrolled = window.pageYOffset;
-      //       var rate = scrolled*-0.25;
-
-      //       target.style.transform = 'translate3d(0px,'+rate+'px, 0px)';
-      //    });
-      // </script>
+      
+      </script>
 
       
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>

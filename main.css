@@ -19,11 +19,12 @@ a:visited{
 }
 
 a:hover{
-   color: #ff7f50;
+   color: #7c7c7c;
    /* text-decoration: underline;
    text-decoration-thickness: 1.5px; */
    transition: 0.2s;
 }
+
 
 .header {
    position: relative;
@@ -31,7 +32,7 @@ a:hover{
    top: 2rem;
    width: 100%;
    justify-content: flex-end;
-   padding-left: 3.6rem;
+   padding-left: 2.5rem;
    padding-right: 5rem;
    font-size: 1rem;
    font-weight: 700;
@@ -52,6 +53,8 @@ section.title {
    height: 100vh;
    padding-left: 5rem;
    box-sizing: border-box;
+   /* background-image: url(./assets/images/Background.png); */
+   background-size: cover;
 }
 section.title .titleBox {
    position: absolute;
@@ -59,28 +62,31 @@ section.title .titleBox {
    transform: translateY(-50%);
 }
 section.title .titleBox h1 {
-   font-size: 8rem;
-   font-weight: 700;
+   font-size: 10rem;
+   font-weight: 500;
    margin-bottom: 1rem;
+   letter-spacing: -0.1rem;
 }
 
 section.title .titleBox .position {
    margin-top: 2rem;
    font-family: "times", sans;
-   font-weight: 400;
-   font-size: 4.5rem;
+   font-weight: 300;
+   font-size: 4.2rem;
    line-height: 5.25rem;
+   color: #d3d3d3;
 }
 section.title .titleBox .position span {
    font-family: "satoshi", sans;
    font-size: 3rem;
-   line-height: 4rem;
+   line-height: 3.8rem;
    letter-spacing: -0.06em;
    color: #7a7a7a;
 }
 
 /* main works */
 section.mainWorks {
+   margin-top: 5rem;
    position: relative;
    padding-left: 5rem;
    box-sizing: border-box;
