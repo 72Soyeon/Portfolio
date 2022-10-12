@@ -127,6 +127,7 @@ section.mainWorks .worksBox .workRow .descContainer .meta {
    font-size: 1.4rem;
    line-height: 1.375rem;
    letter-spacing: -0.06em;
+   color: #d3d3d3;
 }
 section.mainWorks .worksBox .workRow .descContainer .title {
    margin-top: 1.6rem;
@@ -140,7 +141,7 @@ section.mainWorks .worksBox .workRow .descContainer .desc {
    font-size: 1.25rem;
    line-height: 160%;
    letter-spacing: 0.02rem;
-   color: #e3e3e3;
+   color: #d3d3d3;
 }
 section.mainWorks .worksBox .workRow .descContainer .desc .bold {
    font-weight: 700;
@@ -205,7 +206,7 @@ section.moreWorks .boxContainer .box .description {
 section.moreWorks .boxContainer .box img{
    max-width: 100%;
    height: auto;
-   object-fit: contain
+   object-fit: contain;
 }
 
 
@@ -217,10 +218,12 @@ section.about {
    margin-top: 24rem;
    padding-left: 5rem;
    box-sizing: border-box;
+   align-items: flex-start;
 }
 
 section.about .aboutBox {
-   margin-left: 10rem;
+   margin-left: 6rem;
+   margin-right: 6rem; 
 }
 section.about .aboutBox .title {
    font-weight: 500;
@@ -229,7 +232,7 @@ section.about .aboutBox .title {
    letter-spacing: -0.06em;
 }
 section.about .aboutBox .description {
-   width: 55rem;
+   width: rem;
    margin-top: 2rem;
    font-weight: 400;
    font-size: 2.2rem;
@@ -264,7 +267,8 @@ section.contact {
    width: 100%;
    margin-top: 24rem;
    margin-bottom: 17.5rem;
-   padding-left: 5rem;
+   padding-left: 6rem;
+   padding-right: 6rem;
    box-sizing: border-box;
 }
 section.contact .container {

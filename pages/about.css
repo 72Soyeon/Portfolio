@@ -53,7 +53,8 @@ section.about_About {
     margin-top: 12rem;
     /* padding-left: 5rem; */
     box-sizing: border-box;
- }
+    align-items: flex-start;
+}
  
  section.about_About .aboutBox {
     margin-left: 8rem;
