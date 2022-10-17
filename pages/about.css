@@ -27,13 +27,14 @@ body {
    top: 2rem;
    width: 100%;
    justify-content: flex-end;
-   padding-left: 3.6rem;
+   padding-left: 2.5rem;
    padding-right: 5rem;
-   font-size: 1.2rem;
+   font-size: 1rem;
    font-weight: 700;
    box-sizing: border-box;
    z-index: 20;
- }
+}
+
  .header div {
     margin-left: 3rem;
  }
