@@ -1,24 +1,25 @@
+//page show animation
 window.addEventListener("pageshow", function(){
     console.log("pageshow");
 
-    var tl_intro = gsap.timeline({
+    var timeline_intro = gsap.timeline({
 		delay: 0,
         paused:true
 	});
 
-	tl_intro.to("html", 0.6, {
+	timeline_intro.to("html", 0.6, {
 		autoAlpha: 1,
 		ease: Power1.easeOut
 	});
 
-    tl_intro.play();
+    timeline_intro.play();
 
-	var tl = gsap.timeline({
+	var timeline = gsap.timeline({
 		delay: 0.8,
 		paused: true
 	});
 	
-    tl.staggerFromTo(".stagger", 1.0, {
+    timeline.staggerFromTo(".stagger", 1.0, {
 			y: '150%',
 			skewY: 5,
 			autoAlpha: 0
@@ -29,48 +30,50 @@ window.addEventListener("pageshow", function(){
 			ease: Circ.easeOut
 		}, 0.3);
 
-	tl.play();
+	timeline.play();
 
     
-	var tl_with = gsap.timeline({
+	var timeline_with = gsap.timeline({
 		delay: 0.8,
 		paused: true
 	});
 
-    tl_with.staggerFromTo(".introTrans", 1.0,{
+    timeline_with.staggerFromTo(".introTrans", 1.0,{
             autoAlpha:0
         },{
                 autoAlpha:1
         }, 0.3);
 
-    tl_with.play();
+    timeline_with.play();
         
 });
 
+//ordering+timlining
 gsap.ticker.fps(50);
 
-var tl_transition01 = gsap.timeline({
+var timeline_transition01 = gsap.timeline({
         paused: true,
         overwrite: true
 });
 
 
-tl_transition01
+timeline_transition01
     .to("html", 0.5, {
             autoAlpha: 0,
             ease: Power2.easeInOut
     });
     
-tl_transition01.timeScale(0.5);
+timeline_transition01.timeScale(0.5);
 
 
 
+//'stagger body trigger' class animation
 [...document.querySelectorAll('.stagger_body_trigger')].forEach(function(item) {
 	var staggers = item.querySelectorAll('.stagger_body');
-	var tl02 = gsap.timeline({
+	var timeline02 = gsap.timeline({
 		paused: true
 	});
-	tl02.staggerFromTo(staggers, 1.5 	, {
+	timeline02.staggerFromTo(staggers, 1.5 	, {
 		y: '100%',
 		skewY: 10,
 		autoAlpha: 0
@@ -83,18 +86,19 @@ tl_transition01.timeScale(0.5);
 	ScrollTrigger.create({
 		trigger: item,
 		start: "center bottom",
-		onEnter: () => tl02.play()
+		onEnter: () => timeline02.play()
 	});
 });
 
 
+//'more section' title animation
 [...document.querySelectorAll('.more_stagger_body_trigger')].forEach(function(item) {
 	var staggers = item.querySelectorAll('.more_stagger_body');
-	var tl02 = gsap.timeline({
+	var timeline02 = gsap.timeline({
 		paused: true
 	});
 
-	tl02.staggerFromTo(staggers, 2, {
+	timeline02.staggerFromTo(staggers, 2, {
 		y: '50%',
 		skewY: 2,
 		autoAlpha: 0
@@ -108,6 +112,6 @@ tl_transition01.timeScale(0.5);
 	ScrollTrigger.create({
 		trigger: item,
 		start: "left bottom",
-		onEnter: () => tl02.play()
+		onEnter: () => timeline02.play()
 	});
 });
